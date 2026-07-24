@@ -3,7 +3,7 @@
 ## 👥 Team Members
 - L. Surya Deepthi Sri
 - Irene Ramala
-- Prem Jagannath Bhoi
+- Prem Jagannath Bhoi 
 
 ## 📌 Objective
 Analyze historical sales data to identify trends and seasonality and build a forecasting model to predict future sales, presented through an interactive dashboard for business decision-making.
