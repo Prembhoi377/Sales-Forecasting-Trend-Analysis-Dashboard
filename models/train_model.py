@@ -52,7 +52,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_PATH = BASE_DIR / "data" / "cleaned" / "cleaned_sales.csv"
 MODEL_PATH = BASE_DIR / "models" / "sales_model.pkl"
 METRICS_PATH = BASE_DIR / "models" / "model_metrics.pkl"
-FEATURE_PATH = BASE_DIR / "models" / "feature_importance.csv"
+FEATURE
+
+# ==========================================================
+# Create Models Folder (If Not Exists)
+# ==========================================================
+
+MODEL_PATH.parent.mkdir(parents=True, exist_ok=True)_PATH = BASE_DIR / "models" / "feature_importance.csv"
 
 # ==========================================================
 # Load Cleaned Dataset
