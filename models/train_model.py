@@ -224,10 +224,8 @@ joblib.dump(pipeline, MODEL_PATH)
 
 print("\n✅ Model saved as sales_model.pkl")
 print("✅ Metrics saved as model_metrics.pkl")
-print("✅ Feature Importance saved as feature_importance.csv")==========================
-
-joblib.dump(pipeline, MODEL_PATH)
-
-print("\n✅ Model saved as sales_model.pkl")
-print("✅ Metrics saved as model_metrics.pkl")
 print("✅ Feature Importance saved as feature_importance.csv")
+
+
+
+joblib.dump(pipeline, MODEL_PATH)
