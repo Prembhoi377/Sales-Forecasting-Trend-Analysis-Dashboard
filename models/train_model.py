@@ -38,21 +38,16 @@ from sklearn.preprocessing import OneHotEncoder
 from sklearn.ensemble import RandomForestRegressor
 
 from sklearn.metrics import (
-    mean_absolute_error,
-    mean_squared_error,
-    r2_score
-)
-
-# ==========================================================
-# Project Paths
-# ==========================================================
-
-BASE_DIR = Path(__file__).resolve().parent.parent
-
-DATA_PATH = BASE_DIR / "data" / "cleaned" / "cleaned_sales.csv"
-MODEL_PATH = BASE_DIR / "models" / "sales_model.pkl"
-METRICS_PATH = BASE_DIR / "models" / "model_metrics.pkl"
-FEATURE
+    mean_absolute_error,# ==========================================================
+# Project Paths
+# ==========================================================
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+DATA_PATH = BASE_DIR / "data" / "cleaned" / "cleaned_sales.csv"
+MODEL_PATH = BASE_DIR / "models" / "sales_model.pkl"
+METRICS_PATH = BASE_DIR / "models" / "model_metrics.pkl"
+FEATURE_PATH = BASE_DIR / "models" / "feature_importance.csv"
 
 # ==========================================================
 # Create Models Folder (If Not Exists)
