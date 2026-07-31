@@ -6,9 +6,9 @@ An interactive Machine Learning dashboard built using **Streamlit**, **Scikit-le
 
 ## 👥 Project Contributors
 
-- **Prem Jagannath Bhoi**
 - **L. Surya Deepthi Sri**
 - **Irene Ramala**
+- **Prem Jagannath Bhoi**
 
 ---
 
@@ -65,9 +65,11 @@ Sales-Forecasting-Trend-Analysis-Dashboard/
 ├── images/
 │
 ├── models/
+│   ├── train_model.py
+│   ├── feature_importance.csv
+│   └── model_metrics.pkl
 │
 ├── notebooks/
-│
 ├── presentation/
 │
 ├── requirements.txt
@@ -91,29 +93,45 @@ Sales-Forecasting-Trend-Analysis-Dashboard/
 
 ![Business Insights](images/business_insights.png)
 
+### 📊 Model Performance
+
+![Model Performance](images/model_performance.png)
+
 ---
 
-## 🚀 Installation
+# 🚀 Installation & Usage
 
-Clone the repository:
+### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Sales-Forecasting-Trend-Analysis-Dashboard.git
+git clone https://github.com/Prembhoi377/Sales-Forecasting-Trend-Analysis-Dashboard.git
 ```
 
-Navigate to the project directory:
+### 2. Navigate to the project directory
 
 ```bash
 cd Sales-Forecasting-Trend-Analysis-Dashboard
 ```
 
-Install the required dependencies:
+### 3. Install the required dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the Streamlit application:
+### 4. Generate the trained Machine Learning model
+
+```bash
+python models/train_model.py
+```
+
+This command automatically generates:
+
+- `models/sales_model.pkl`
+- `models/model_metrics.pkl`
+- `models/feature_importance.csv`
+
+### 5. Run the Streamlit dashboard
 
 ```bash
 streamlit run dashboard/app.py
@@ -127,6 +145,19 @@ streamlit run dashboard/app.py
 - **Objective:** Sales Forecasting
 - **Input:** Historical Sales Data
 - **Output:** Future Sales Prediction
+
+> **Note:** The trained model (`sales_model.pkl`) is not included in this repository because it exceeds GitHub's file size limit. Run `python models/train_model.py` before launching the dashboard to generate the trained model automatically.
+
+---
+
+## 📈 Model Evaluation Metrics
+
+The model is evaluated using the following regression metrics:
+
+- **R² Score**
+- **Mean Absolute Error (MAE)**
+- **Mean Squared Error (MSE)**
+- **Root Mean Squared Error (RMSE)**
 
 ---
 
@@ -155,9 +186,5 @@ This dashboard enables businesses to:
 
 ## 📜 License
 
-This project is developed for educational and academic purposes.ages/
-├── presentation/
-│
-├── requirements.txt
-└── README.md
+This project is developed for educational and academic purposes.
 ```
